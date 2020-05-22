@@ -2,8 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 import Logo from '../../images/menu-logo.png';
 import Single from '../../images/single.png';
-import Arrow from '../../images/arrow.png';
-import ArrowRight from '../../images/arrow-right.png';
 import LeftTable from '../../images/tablas-left.png';
 import RightTable from '../../images/tablas-right.png';
 
