@@ -10,7 +10,7 @@ const GlobalStyles = createGlobalStyle`
  h1 {
      font-family: ${(props) => props.theme.bold_san} !important;
      color: #fff !important;
-     font-weight:800 !important;   
+     font-weight:900 !important;   
  }
 
  h2{

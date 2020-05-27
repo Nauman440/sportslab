@@ -13,7 +13,7 @@ const Image = styled.img`
 `;
 
 const MainHeading = styled.h1`
-  font-size:35px !important;
+  font-size: ${({ fontSize }) => fontSize || '31'}px !important;
   @media (max-width: 1315px ) {
     font-size:28px !important;
   }
@@ -41,7 +41,7 @@ const ChockDiv = styled.div`
 
 const DescDiv = styled.div`
 
- width: 100% !important;
+ width: 75% !important;
   
  @media (max-width:970px) {
    width: 100% !important;
@@ -49,7 +49,8 @@ const DescDiv = styled.div`
 `;
 
 const SubHeading = styled.h3`
-
+letter-spacing:1px !important;
+font-size: ${({ fontSize }) => fontSize || '22'}px !important;
 @media (max-width: 1315px ) {
   font-size:21px !important;
 }
@@ -74,20 +75,20 @@ const Index = () => (
         <ChockDiv className="col-sm-4 d-flex flex-column align-items-center">
           <MainHeading>AYUDA A LA</MainHeading>
           <SubHeading>RECUPERACION</SubHeading>
-          <MainHeading>MUSCULAR</MainHeading>
-          <SubHeading>ENTRENAMIENTO</SubHeading>
+          <MainHeading fontSize={33}>MUSCULAR</MainHeading>
+          <SubHeading fontSize={20}>ENTRENAMIENTO</SubHeading>
         </ChockDiv>
         <ChockDiv className="col-sm-4 d-flex flex-column align-items-center">
           <MainHeading>COMPLEMENTA</MainHeading>
-          <SubHeading>EL APORTE DIARIO</SubHeading>
-          <MainHeading>DE Y PROTEINSA</MainHeading>
-          <SubHeading>DE LA DIETA</SubHeading>
+          <SubHeading fontSize={24}>EL APORTE DIARIO</SubHeading>
+          <SubHeading fontSize={18}>DE ENERIA Y PROTEINSA</SubHeading>
+          <MainHeading fontSize={40}>DE LA DIETA</MainHeading>
         </ChockDiv>
         <ChockDiv className="col-sm-4 d-flex flex-column align-items-center">
           <MainHeading>COMPENSA EL</MainHeading>
           <SubHeading>DEFICIT PROTEICO</SubHeading>
           <MainHeading>EN PERSONAS</MainHeading>
-          <SubHeading>VEGETARIANOS</SubHeading>
+          <SubHeading fontSize={26}>VEGETARIANOS</SubHeading>
         </ChockDiv>
       </DescDiv>
     </div>

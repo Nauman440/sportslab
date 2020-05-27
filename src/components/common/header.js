@@ -10,14 +10,25 @@ box-shadow: 1px 7px 10px #888;
 
 const LogoWrapper = styled.div`
   width:40% !important;
+
 `;
 
 const Navbar = styled.div`
+&:nth-child(3) {
+  margin-bottom: 20px;
+  color: red !important;
+}
 .nav-item {
   padding-right:40px !important;
   font-family: ${(props) => props.theme.light_san} !important;
-  color:#333 !important;
+  color:#000 !important;
+  border-right:1px solid #000;
+
+  &:nth-last-child(1) {
+    border:0px !important;
+  }
 }
+
 `;
 
 const Header = () => (

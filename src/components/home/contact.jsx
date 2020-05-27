@@ -12,20 +12,20 @@ box-sizing: border-box;
 padding: 30px;
 color: #fff;
 
-// &:after {
-//   position: absolute;
-//   width: 100%;
-//   height: 100%;
-//   content: '';
-//   background: inherit;
-//   z-index: -1;
-//   top: 0;
-//   right: 0;
-//   bottom: 0;
-//   left: 0;
-//   transform-origin: top left;
-//   transform: skewY(4deg);
-// }
+&:after {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  content: '';
+  background: inherit;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform-origin: top left;
+  transform: skewY(4deg);
+}
 `;
 
 const ContactForm = styled.div`

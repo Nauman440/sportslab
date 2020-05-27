@@ -18,6 +18,10 @@ font-size:20px !important;
 @media (max-width:900px){
   font-size: 12px !important;
 }
+
+i {
+  font-size:25px !important;
+}
 `;
 
 const Paragraph = styled.p`
@@ -39,9 +43,14 @@ const Index = () => (
         </div>
       </div>
       <div className="row">
-        <div className="col d-flex flex-column justify-content-center align-items-end">
+        <div className="col d-flex flex-column justify-content-center">
           <div className="mt-5">
-            <ProductHeading>PRESENTACION: </ProductHeading>
+
+            <ProductHeading className="d-flex justify-content-between">
+              PRESENTACION:
+              {' '}
+              <i className="fa fa-long-arrow-right" aria-hidden="true" />
+            </ProductHeading>
             <Paragraph>Barras de 70 g.</Paragraph>
             <Paragraph>Sabor: Chocolate y Galletas con Crerna.</Paragraph>
           </div>
@@ -51,7 +60,11 @@ const Index = () => (
           </div>
 
           <div className="mt-5">
-            <ProductHeading>MODO DE USO </ProductHeading>
+            <ProductHeading className="d-flex justify-content-between">
+              MODO DE USO
+              {' '}
+              <i className="fa fa-long-arrow-right" aria-hidden="true" />
+            </ProductHeading>
             <Paragraph>
               Consumir 1 barra antes, durante o despues
               de la actividad fisica. Tambien como reemplazo
@@ -66,7 +79,12 @@ const Index = () => (
         </div>
         <div className="col d-flex flex-column justify-content-center align-items-center">
           <div className="mt-5">
-            <ProductHeading>CONTRAINDICACIONES: </ProductHeading>
+            <ProductHeading className="d-flex justify-content-between">
+              <i className="fa fa-long-arrow-left" aria-hidden="true" />
+              CONTRAINDICACIONES:
+              {' '}
+
+            </ProductHeading>
             <Paragraph>Personas con fenilcetonuria y alergicos a la leche y soya</Paragraph>
 
           </div>
@@ -76,7 +94,12 @@ const Index = () => (
           </div>
 
           <div className="mt-5">
-            <ProductHeading>PRESENTACION: </ProductHeading>
+            <ProductHeading className="d-flex justify-content-between">
+              <i className="fa fa-long-arrow-left" aria-hidden="true" />
+              PRESENTACION:
+              {' '}
+
+            </ProductHeading>
             <Paragraph>Barras de 70 g.</Paragraph>
             <Paragraph>Sabor: Chocolate y Galletas con Crerna.</Paragraph>
           </div>

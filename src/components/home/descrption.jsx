@@ -21,7 +21,8 @@ background-size:cover;
 
 const RowContainer = styled.div`
  width: 75% !important;
-
+ border:7px solid #fff;
+ box-shadow: 3px 5px 10px #555;
  @media(max-width: 568px) {
    width:100% !important; 
  }
